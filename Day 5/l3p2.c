@@ -4,9 +4,9 @@ int main()
     int x,y,a;
     printf("Enter the number: ");
     scanf("%d", &x);
-    if(x==50)
-     print("success");
+    if(x!=50)
+     printf("success");
     else
-     print ("failure");
+     printf("failure");
     return 0;
 }

@@ -6,5 +6,4 @@ int main()
     scanf("%d",&x);
     y=x/6;
     printf("Result=%d",y);
-    return 0;
 }
