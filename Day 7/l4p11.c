@@ -1,21 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int x=10;
-    int sum=0;
-    loop:
-    if (x<=100)
+    int x, y = 0;
+    printf("Enter a number: ");
+    scanf("%d", &x);
+    if (x== 0)
     {
-        if (x%2!=0)
-        {
-            if ((x/10)==7)
-            {
-                sum=sum+x;
-              printf("x=%d ,sum = %d\n",x,sum);  
-            }
-        }
-        x++;
+    y = 1;
+    goto print;
+    }
+loop:
+    if (x!= 0)
+    {
+        y++;
+        x= x/10;
         goto loop;
     }
+print:
+    printf("Number of digits = %d\n", y);
     return 0;
 }
