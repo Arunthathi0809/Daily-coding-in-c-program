@@ -1,14 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int x;
+    int x;    
     for (x=1;x<=9;x++)
     {
         if(x%2!=0)
         {
          printf("%d\n",x); 
-    } 
-}
-        
+        }
+    }      
         return 0;
 }
